@@ -2,6 +2,9 @@ name: Publish Python 🐍 distribution 📦 to PyPI and TestPyPI
 
 on: push
 
+permissions:
+  id-token: write  # IMPORTANT: mandatory for trusted publishing
+
 jobs:
   build:
     name: Build distribution 📦
