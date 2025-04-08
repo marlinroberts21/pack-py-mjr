@@ -1,0 +1,48 @@
+In this assignment you will create a workflow that tests, builds and deploys the project through GitHub actions. You will use the same repo that you used for manually packaging a Python project.
+
+1: Create modules.
+    Add __init__.py to both your src/example_package directory and your tests directory. The file should be empty.
+
+2: Create a test that tests your example.add_one() function.
+    Make a test file in your tests directory that has one test.
+    Make it assert that example.add_one(1) == 2
+    To access your example module, use the syntax:
+        from src.example_package_<your username> import example
+    Use the function from the example module with:
+        example.add_one()
+    If you have not already, install pytest into your environment.
+        pip install pytest
+    Make sure your test passes when you run pytest from the main directory.
+
+3: Push your changes to GitHub.
+
+4: In GitHub go to actions, create new workflow, set up a workflow yourself.
+    Give the .yml file a name, like publish.yml.
+
+5: Copy and paste the contents of the provided .yml file into yours.
+    You will need to change any reference to example_package to your package name.
+    After you create the .yml file, go to your local repo and pull the changes.
+    This will create the .github/workflows directory in your local repo.
+
+6: Go to testPyPi (test.pypi.org), account, publishing to make a trusted publisher. Enter:
+    your testPyPi project name (this is the name of your package)
+    your GitHub username
+    your GitHub repo name
+    the name of the .yml file you created
+    the environment variable you created in the .yml file, it should be testPyPi
+
+7: In your pyproject.toml file, increment the version number string.
+    You will need to increment the version number every time you publish your package.
+
+8: Add your pyproject.toml file to the staging area and commit the changes.
+    Make sure you are in the main directory of your repo.
+    Use the command:
+        git add pyproject.toml
+        git commit -m "increment version number"
+    Push your changes to GitHub.
+
+9: Go to your GitHub repo, actions, and check the status of your workflow.
+    If it is successful, go to testPyPi and check if your package is there.
+    If it is not successful, check the logs in GitHub actions to see what went wrong.
+
+10: Submit a screenshot of your GitHub actions workflow once it is successful.
