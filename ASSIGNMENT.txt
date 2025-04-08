@@ -1,5 +1,7 @@
 In this assignment you will create a workflow that tests, builds and deploys the project through GitHub actions. You will use the same repo that you used for manually packaging a Python project.
 
+Note: do all of these steps from your main branch
+
 1: Create modules.
     Add __init__.py to both your src/example_package directory and your tests directory. The file should be empty.
 
