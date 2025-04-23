@@ -1,10 +1,10 @@
 [build-system]
-requires = ["hatchling == 1.21"]
+requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [project]
 name = "example_package_marlinroberts21"
-version = "0.0.18"
+version = "0.0.19"
 authors = [
   { name="Marlin Roberts", email="marlinroberts21@gmail.com" },
 ]
@@ -16,7 +16,7 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 license = "MIT"
-license-files.globs = ["LICEN[CS]E*"]
+license-files = ["LICEN[CS]E*"]
 
 [project.urls]
 Homepage = "https://github.com/marlinroberts21/pack-py-mjr.git"
