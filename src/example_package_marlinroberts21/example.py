@@ -7,3 +7,8 @@ def add_one(number):
 DOCSTRTING
 
 '''
+
+
+# Finish the sub_one function
+def sub_one(number):
+    return  number - 1
