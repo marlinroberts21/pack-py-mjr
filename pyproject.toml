@@ -18,7 +18,7 @@ classifiers = [
 ]
 license = "MIT"
 # license-files = ["LICEN[CS]E*"]
-license-files.blob = ["LICEN[CS]E*"]
+license-files.glob = ["LICEN[CS]E*"]
 
 [project.urls]
 Homepage = "https://github.com/marlinroberts21/pack-py-mjr.git"
